@@ -1,10 +1,10 @@
 package survey.model;
 
 public class Member {
-    public int id;
-    public String fullName;
-    public String emailAddress;
-    public boolean isActive;
+    private int id;
+    private String fullName;
+    private String emailAddress;
+    private boolean isActive;
 
     public Member(int id, String fullName, String emailAddress, boolean isActive) {
         this.id = id;

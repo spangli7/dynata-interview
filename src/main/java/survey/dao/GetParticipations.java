@@ -21,7 +21,7 @@ public class GetParticipations {
         for (int i = 1; i < lines.size() ; i++) {
 
             Participation survey = getParticipation(lines.get(i));
-            participations.computeIfAbsent(survey.memberId,l->new ArrayList<>()).add(survey);
+            participations.computeIfAbsent(survey.getMemberId(),l->new ArrayList<>()).add(survey);
         }
 
         return participations;

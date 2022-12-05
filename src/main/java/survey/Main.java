@@ -7,8 +7,11 @@ public class Main {
 
         SurveyController controller = new SurveyController();
 
-        
+        controller.getSurveyParticipant(7);
 
+        controller.getSurveyCompletedByMember(6);
+
+        controller.getPointsByMember(7);
 
     }
 }
