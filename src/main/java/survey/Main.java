@@ -7,7 +7,7 @@ public class Main {
 
         SurveyController controller = new SurveyController();
 
-        controller.reader();
+        
 
 
     }
