@@ -1,17 +1,27 @@
 package survey;
 
 import survey.controller.SurveyController;
+import survey.model.AllPointsByMember;
+import survey.model.Member;
+import survey.model.Survey;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
         SurveyController controller = new SurveyController();
 
-        controller.getSurveyParticipant(7);
+        List<Integer> surveyParticipants = controller.getSurveyParticipant(7);
+        System.out.println(surveyParticipants);
 
-        controller.getSurveyCompletedByMember(6);
+        List<Survey> surveyCompleted = controller.getSurveyCompletedByMember(6);
+        System.out.println(surveyCompleted);
 
-        controller.getPointsByMember(7);
 
+        AllPointsByMember memberPoints = controller.getPointsByMember(7);
+        System.out.println(memberPoints);
+
+        List<Member> members = controller.getMembersForInvite(6);
     }
 }

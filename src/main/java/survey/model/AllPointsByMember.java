@@ -9,4 +9,12 @@ public class AllPointsByMember {
         this.completionPoints = completionPoints;
         this.filteredPoints = filteredPoints;
     }
+
+    @Override
+    public String toString() {
+        return "AllPointsByMember{" +
+                "completionPoints=" + completionPoints +
+                ", filteredPoints=" + filteredPoints +
+                '}';
+    }
 }
